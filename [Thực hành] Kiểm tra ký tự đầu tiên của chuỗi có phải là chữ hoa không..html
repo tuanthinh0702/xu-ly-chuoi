@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Thực hành] Kiểm tra ký tự đầu tiên của chuỗi có phải là chữ hoa không.</title>
+</head>
+<body>
+<script>
+
+  function isFirstLetterUpperCase(str) {
+      regexp = / ^[A-Z]/;
+    if(regexp.test(str))
+    {
+      console.log("string's first character is uppercase");
+    } else
+    {
+      console.log("string's first character is not uppercase");
+    }
+    return ;
+  }
+isFirstLetterUpperCase('Uhh');
+
+</script>
+</body>
+</html>

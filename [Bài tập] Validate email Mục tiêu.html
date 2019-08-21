@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Validate email Mục tiêu </title>
+</head>
+<body>
+<script>
+function isPassword(str) {
+  text = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]{3})$/
+  if(text.test(str))
+  {
+    console.log("đúng");
+
+  }
+  else
+  {
+    console.log("sai");
+  }
+
+}
+isPassword("Thinhnguyen07@gmail.com");
+</script>
+</body>
+</html>

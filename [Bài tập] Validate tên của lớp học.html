@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Validate tên của lớp học</title>
+</head>
+<body>
+<input type="text" oninput="nameclass()" id="txt">
+<p id="display"></p>
+<script>
+  function nameclass() {
+    regex =/[CAP][0-9]{4}[GHIKLM]$/;
+    str = document.getElementById("txt").value;
+    if(regex.test(str))
+    {
+      document.getElementById("display").innerHTML="dung";
+    }
+    else
+    {
+      document.getElementById("display").innerHTML="sai";
+    }
+    
+  }
+</script>
+</body>
+</html>

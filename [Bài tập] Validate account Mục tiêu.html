@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Validate account Mục tiêu</title>
+</head>
+<body>
+<input type="text" id="txt" oninput="kiemtrachuoi()">
+<span id="display"></span>
+<script>
+    function kiemtrachuoi() {
+     str = document.getElementById("txt").value;
+      regex = /^[_a-z0-9]{6,}$/;
+      if(regex.test(str))
+      {
+        document.getElementById("display").innerHTML="dung";
+      }
+      else
+      {
+        document.getElementById("display").innerHTML="sai";
+      }
+      
+    }
+</script>
+</body>
+</html>
